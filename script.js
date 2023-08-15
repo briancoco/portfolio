@@ -8,13 +8,42 @@ const input = document.querySelector(".input");
 //we then want to send that output to the terminal output
 
 function handleTerminalInput(cmd) {
-  return [cmd];
+  switch (cmd) {
+    case "help":
+      return help;
+    case "whois":
+      return whois;
+    case "resume":
+      return resume;
+    default:
+      return ['Invalid command! Type "help" to see available commands'];
+  }
+}
+
+function formatLine(line) {
+  let i = 0;
+  res = [];
+  while (i < line.length) {
+    if (line[i] === " ") {
+      res.push(" ");
+      i++;
+      while (i < line.length && line[i] == " ") {
+        res.push("&nbsp");
+        i++;
+      }
+    } else {
+      res.push(line[i]);
+      i++;
+    }
+  }
+  return res.join("");
 }
 
 function handleTerminalOutput(lines) {
   for (const line of lines) {
     const paragraph = document.createElement("p");
-    paragraph.innerText = line;
+    const formattedLine = formatLine(line);
+    paragraph.innerHTML = formattedLine;
     terminalOutput.appendChild(paragraph);
   }
 }
