@@ -7,6 +7,10 @@ const input = document.querySelector(".input");
 //and get the correct output
 //we then want to send that output to the terminal output
 
+function clearTerminal() {
+  terminalOutput.innerHTML = "";
+}
+
 function handleTerminalInput(cmd) {
   switch (cmd) {
     case "help":
@@ -15,6 +19,15 @@ function handleTerminalInput(cmd) {
       return whois;
     case "resume":
       return resume;
+    case "projects":
+      return projects;
+    case "social":
+      return social;
+    case "email":
+      return email;
+    case "clear":
+      clearTerminal();
+      return [];
     default:
       return ['Invalid command! Type "help" to see available commands'];
   }

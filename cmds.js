@@ -1,3 +1,7 @@
+const linkedin = "https://www.linkedin.com/in/brian-nguyen-a75744240/";
+const github = "https://github.com/briancoco";
+const resumeLink = "https://google.com";
+
 const help = [
   "<br>",
   '<span class="command">whois</span>          Who is Brian Nguyen?',
@@ -24,5 +28,45 @@ const whois = [
   "<br>",
 ];
 
-const resumeLink = "https://google.com";
-const resume = ["<br>", `<a href=${resumeLink}>resume</a>`, "<br>"];
+const resume = [
+  "<br>",
+  `Here's my <a href=${resumeLink}>resume</a> where you can see`,
+  "my education, work experience, and personal projects. :)",
+  "<br>",
+];
+
+const projects = [
+  "<br>",
+  "RevTube",
+  "Full-stack web application made for Aggie to share what's going on around campus.",
+  "More formally, it is a secure video streaming platform allowing for",
+  "streaming of content, content uploads, and secure user authentiation utlizing",
+  "<br>",
+  "Spotisky",
+  "Inspired by other applications like Spotify Wrapped and Spotify GetReadyWithMusic,",
+  "Spotisky is a web applcation that gives users personalized horoscopes based on their top",
+  "Spotify data. This application uses Spotify API to authenticate and pull user's top listening data,",
+  "and an algorithm to determine user's horoscopes based on metrics such as",
+  "danceability, energy, tempo, and loudness.",
+  "<br>",
+  "Seam Carving",
+  "Command line interface program for content-aware image resizing utilize the seam carving method",
+  "to reduce image disfiguration. Works by using the dual gradient energy function to identify and remove unimportant pixels",
+  "to match user's specified dimensions. Utilizes OOP and File IO to read and accurately represent",
+  "image's pixels.",
+  "<br>",
+  "Skribbl Clone",
+  "Full-stack clone of the popular online drawing and guessing game, Skribbl.",
+  "Utilizes HTML's Canvas API to integrate drawing board into the UI and WebSockets",
+  "to allow for open communication between client and server, allowing drawings and game",
+  "data to be conveyed in real-time.",
+];
+
+const social = [
+  "<br>",
+  `linkedin       <a href=${linkedin}>linkedin/briannguyen</a>`,
+  `github         <a href=${github}>github/briancoco</a>`,
+  "</br>",
+];
+
+const email = ["<br>", "Here's my email: briancoco@tamu.edu", "<br>"];
