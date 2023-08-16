@@ -1,0 +1,37 @@
+body {
+    font-family: cursor, monospace;
+    color: rgb(169, 190, 216);
+    background-color: rgb(1, 40, 73);
+}
+
+p {
+    margin: 0px;
+}
+
+.line-starter {
+    color: rgb(245, 87, 160);
+}
+
+.command {
+    color: rgb(169, 238, 85);
+}
+
+a {
+    color: rgb(94, 162, 236);
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    height: 1.3em;
+    width: 10px;
+    background-color: rgb(94, 162, 236);
+    display: inline-block;
+    transform: translate(-5px, 4px);
+    animation: blinker 1s linear infinite;
+    margin: 0px;
+}

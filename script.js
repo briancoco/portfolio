@@ -1,4 +1,4 @@
-const terminalInput = document.querySelector(".terminal-input");
+const terminalInput = document.querySelector(".typer");
 const terminalOutput = document.querySelector(".terminal-output");
 const input = document.querySelector(".input");
 
@@ -65,6 +65,8 @@ document.addEventListener("keydown", (e) => {
   console.log(e);
   if (e.keyCode === 13) {
     const outputLines = handleTerminalInput(input.value);
+    if (outputLines.length > 0)
+      outputLines.unshift("<span class=line-starter>visitor@cocochimps:~$</span> " + input.value);
     handleTerminalOutput(outputLines);
     input.value = "";
   } else if ((e.keyCode >= 65 && e.keyCode <= 90) || e.keyCode === 32) {
@@ -72,4 +74,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.keyCode === 8) {
     input.value = input.value.substring(0, input.value.length - 1);
   }
+  terminalInput.innerHTML = input.value;
 });
+
+handleTerminalOutput(header);
