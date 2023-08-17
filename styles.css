@@ -4,8 +4,21 @@ body {
     background-color: rgb(1, 40, 73);
 }
 
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 p {
     margin: 0px;
+    overflow: hidden;
+    animation: typing 0.5s steps(30, end);
+    white-space: nowrap;
 }
 
 .line-starter {

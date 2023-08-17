@@ -9,7 +9,7 @@ const help = [
   '<span class="command">projects</span>       View coding projects',
   '<span class="command">social</span>         Display social networks',
   '<span class="command">help</span>           You obviously already know what this does',
-  '<span class="command">email</span>          Do not email me',
+  '<span class="command">email</span>          Do not email me (just joking 0-0)',
   '<span class="command">clear</span>          Clear terminal',
   "<br>",
 ];
@@ -69,24 +69,38 @@ const projects = [
 
 const social = [
   "<br>",
-  `linkedin       <a href=${linkedin}>linkedin/briannguyen</a>`,
-  `github         <a href=${github}>github/briancoco</a>`,
+  "Here are my social media accounts!",
+  " I'm always looking to connect with ambitious, like-minded people.",
+  "<br>",
+  `<span class=command>linkedin</span>       <a href=${linkedin}>linkedin/briannguyen</a>`,
+  `<span class=command>github</span>         <a href=${github}>github/briancoco</a>`,
   "</br>",
 ];
 
-const email = ["<br>", "Here's my email: briancoco@tamu.edu", "<br>"];
+const email = [
+  "<br>",
+  "Here's my email! Please contact me about any professional opportunites :)",
+  "<br>",
+  "<span class=command>briancoco@tamu.edu</span>",
+  "<br>"
+];
 
 const banner = [
-  '       .-"-.            .-"-.            .-"-.           .-"-.',
-  '     _/_-.-_\_        _/.-.-.\_        _/.-.-.\_       _/.-.-.\_',
-  '    / __} {__ \      /|( o o )|\      ( ( o o ) )     ( ( o o ) )',
-  '   / //  "  \\ \    | //  "  \\ |      |/  "  \|       |/  "  \|',
-  "  / / \'---'/ \ \  / / \'---'/ \ \      \'/^\'/         \ .-. /",
-  '  \ \_/`"""`\_/ /  \ \_/`"""`\_/ /      /`\ /`\         /`"""`\ ',
-  "   \           /    \           /      /  /|\  \       /       \ ",
-  "-={ see no evil }={ hear no evil }={ speak no evil }={ have no fun }=-"
+  "Briancoco (BC) Not A Corporation. All rights reserved.",
+  '<span class=command>  ____       _               _   _                              </span>',
+  '<span class=command> |  _ \\     (_)             | \\ | |                             </span>',
+  '<span class=command> | |_) |_ __ _  __ _ _ __   |  \\| | __ _ _   _ _   _  ___ _ __  </span>',
+  "<span class=command> |  _ <| '__| |/ _` | '_ \\  | . ` |/ _` | | | | | | |/ _ \\ '_ \\ </span>",
+  "<span class=command> | |_) | |  | | (_| | | | | | |\\  | (_| | |_| | |_| |  __/ | | |</span>",
+  '<span class=command> |____/|_|  |_|\\__,_|_| |_| |_| \\_|\\__, |\\__,_|\\__, |\\___|_| |_|</span>',
+  "<span class=command>                                    __/ |       __/ |           </span>",
+  "<span class=command>                                   |___/       |___/            </span>"
 ]
 
 const header = [
-  'Briancoco (BC) Not A Corporation. All rights reserved.'
+  "<br>",
+  "Welcome to my portfolio web terminal.",
+  "For a list of available commands, type <span class=command>'help'</span>",
+  "<br>"
+  
 ]

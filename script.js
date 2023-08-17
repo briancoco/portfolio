@@ -52,13 +52,13 @@ function formatLine(line) {
   return res.join("");
 }
 
-function handleTerminalOutput(lines) {
-  for (const line of lines) {
-    const paragraph = document.createElement("p");
-    const formattedLine = formatLine(line);
-    paragraph.innerHTML = formattedLine;
-    terminalOutput.appendChild(paragraph);
-  }
+async function handleTerminalOutput(lines) {
+  if(lines.length == 0) return;
+  const paragraph = document.createElement("p");
+  const formattedLine = formatLine(lines[0]);
+  paragraph.innerHTML = formattedLine;
+  terminalOutput.appendChild(paragraph);
+  setTimeout(() => handleTerminalOutput(lines.slice(1)), 100);
 }
 
 document.addEventListener("keydown", (e) => {
@@ -77,4 +77,5 @@ document.addEventListener("keydown", (e) => {
   terminalInput.innerHTML = input.value;
 });
 
-handleTerminalOutput(header);
+handleTerminalOutput(banner);
+setTimeout(() => handleTerminalOutput(header), 1000);
