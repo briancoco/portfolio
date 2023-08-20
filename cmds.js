@@ -42,6 +42,7 @@ const projects = [
   "Full-stack web application made for Aggie to share what's going on around campus.",
   "More formally, it is a secure video streaming platform allowing for",
   "streaming of content, content uploads, and secure user authentiation utlizing",
+  "<img class=project-picture src=./assets/revtube-demo.gif>",
   "<br>",
   "<span class=command>Spotisky</span>",
   "<br>",
@@ -50,6 +51,7 @@ const projects = [
   "Spotify data. This application uses Spotify API to authenticate and pull user's top listening data,",
   "and an algorithm to determine user's horoscopes based on metrics such as",
   "danceability, energy, tempo, and loudness.",
+  "<img class=project-picture src=./assets/spotisky.png>",
   "<br>",
   "<span class=command>Seam Carving</span>",
   "<br>",
@@ -57,6 +59,7 @@ const projects = [
   "to reduce image disfiguration. Works by using the dual gradient energy function to identify and remove unimportant pixels",
   "to match user's specified dimensions. Utilizes OOP and File IO to read and accurately represent",
   "image's pixels.",
+  "<img class=project-picture src=./assets/carving-demo.gif>",
   "<br>",
   "<span class=command>Skribbl Clone</span>",
   "<br>",
@@ -64,6 +67,7 @@ const projects = [
   "Utilizes HTML's Canvas API to integrate drawing board into the UI and WebSockets",
   "to allow for open communication between client and server, allowing drawings and game",
   "data to be conveyed in real-time.",
+  "<img class=project-picture src=./assets/skribbl.gif>",
   "<br>"
 ];
 

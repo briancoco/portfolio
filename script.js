@@ -1,6 +1,7 @@
 const terminalInput = document.querySelector(".typer");
 const terminalOutput = document.querySelector(".terminal-output");
 const input = document.querySelector(".input");
+//const body = document.querySelector("body");
 
 //terminal input represents commands
 //whenever we hit enter, we want to check the input against the avaiable cmds
@@ -64,7 +65,8 @@ async function handleTerminalOutput(lines) {
 document.addEventListener("keydown", (e) => {
   console.log(e);
   if (e.keyCode === 13) {
-    const outputLines = handleTerminalInput(input.value);
+    const outputLines = [...handleTerminalInput(input.value)];
+    console.log(outputLines);
     if (outputLines.length > 0)
       outputLines.unshift("<span class=line-starter>visitor@cocochimps:~$</span> " + input.value);
     handleTerminalOutput(outputLines);

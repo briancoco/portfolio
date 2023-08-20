@@ -2,6 +2,7 @@ body {
     font-family: cursor, monospace;
     color: rgb(169, 190, 216);
     background-color: rgb(1, 40, 73);
+    height: 100vh;
 }
 
 @keyframes typing {
@@ -47,4 +48,8 @@ a {
     transform: translate(-5px, 4px);
     animation: blinker 1s linear infinite;
     margin: 0px;
+}
+
+.project-picture {
+    width: 500px;
 }
