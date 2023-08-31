@@ -3,6 +3,7 @@ body {
     color: rgb(169, 190, 216);
     background-color: rgb(1, 40, 73);
     height: 100vh;
+    margin: 0;
 }
 
 @keyframes typing {
@@ -52,4 +53,9 @@ a {
 
 .project-picture {
     width: 500px;
+}
+
+.anchor {
+    overflow-anchor: auto;
+    height: 1px;
 }

@@ -1,6 +1,6 @@
 const linkedin = "https://www.linkedin.com/in/brian-nguyen-a75744240/";
 const github = "https://github.com/briancoco";
-const resumeLink = "https://google.com";
+const resumeLink = "./assets/resume.pdf";
 
 const help = [
   "<br>",
@@ -42,6 +42,7 @@ const projects = [
   "Full-stack web application made for Aggie to share what's going on around campus.",
   "More formally, it is a secure video streaming platform allowing for",
   "streaming of content, content uploads, and secure user authentiation utlizing",
+  "hashing, salting, and peppering of user data",
   "<img class=project-picture src=./assets/revtube-demo.gif>",
   "<br>",
   "<span class=command>Spotisky</span>",
